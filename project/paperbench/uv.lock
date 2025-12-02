@@ -233,12 +233,12 @@ requires-dist = [
 dev = [
     { name = "chz" },
     { name = "flask" },
-    { name = "mypy", specifier = ">=1.16.1" },
+    { name = "mypy", specifier = "==1.18.2" },
     { name = "poethepoet", specifier = ">=0.36.0" },
     { name = "pre-commit", specifier = ">=4.2.0" },
     { name = "pylint", specifier = ">=3.2.7" },
     { name = "ruff", specifier = ">=0.12.1" },
-    { name = "types-docker", specifier = ">=7.1.0.20251009" },
+    { name = "types-docker", specifier = "==7.1.0.20251009" },
 ]
 
 [[package]]
@@ -2086,37 +2086,6 @@ wheels = [
 ]
 
 [[package]]
-name = "preparedness-turn-completer"
-version = "0.1.0"
-source = { editable = "../common/preparedness_turn_completer" }
-dependencies = [
-    { name = "chz" },
-    { name = "openai" },
-    { name = "structlog" },
-    { name = "tenacity" },
-    { name = "tiktoken" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "chz" },
-    { name = "openai", specifier = "==1.99.9" },
-    { name = "structlog" },
-    { name = "tenacity" },
-    { name = "tiktoken" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "mypy", specifier = ">=1.15.0" },
-    { name = "poethepoet", specifier = ">=0.34.0" },
-    { name = "pre-commit", specifier = ">=4.2.0" },
-    { name = "pytest", specifier = ">=8.4.1" },
-    { name = "pytest-xdist", extras = ["psutil"], specifier = ">=3.8.0" },
-    { name = "ruff", specifier = ">=0.11.10" },
-]
-
-[[package]]
 name = "more-itertools"
 version = "10.8.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2686,12 +2655,12 @@ dependencies = [
     { name = "docker" },
     { name = "drain3" },
     { name = "flask" },
-    { name = "preparedness-turn-completer" },
     { name = "nanoeval" },
     { name = "nanoeval-alcatraz" },
     { name = "openai" },
     { name = "pandas" },
     { name = "pandas-stubs" },
+    { name = "preparedness-turn-completer" },
     { name = "python-dateutil" },
     { name = "python-dotenv" },
     { name = "pyyaml" },
@@ -2723,12 +2692,12 @@ requires-dist = [
     { name = "docker", specifier = ">=7.1.0" },
     { name = "drain3", specifier = ">=0.9.11" },
     { name = "flask", specifier = ">=3.0.3" },
-    { name = "preparedness-turn-completer", editable = "../common/preparedness_turn_completer" },
     { name = "nanoeval", editable = "../common/nanoeval" },
     { name = "nanoeval-alcatraz", editable = "../common/nanoeval_alcatraz" },
     { name = "openai", specifier = ">=1.54.3" },
     { name = "pandas", specifier = ">=2.0.0" },
     { name = "pandas-stubs", specifier = ">=2.3.0.250703" },
+    { name = "preparedness-turn-completer", editable = "../common/preparedness_turn_completer" },
     { name = "python-dateutil", specifier = ">=2.9.0" },
     { name = "python-dotenv", specifier = ">=1.0.0" },
     { name = "pyyaml", specifier = ">=6.0" },
@@ -2932,6 +2901,37 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/f4/9b/6a4ffb4ed980519da959e1cf3122fc6cb41211daa58dbae1c73c0e519a37/pre_commit-4.5.0.tar.gz", hash = "sha256:dc5a065e932b19fc1d4c653c6939068fe54325af8e741e74e88db4d28a4dd66b", size = 198428 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5d/c4/b2d28e9d2edf4f1713eb3c29307f1a63f3d67cf09bdda29715a36a68921a/pre_commit-4.5.0-py2.py3-none-any.whl", hash = "sha256:25e2ce09595174d9c97860a95609f9f852c0614ba602de3561e267547f2335e1", size = 226429 },
+]
+
+[[package]]
+name = "preparedness-turn-completer"
+version = "0.1.0"
+source = { editable = "../common/preparedness_turn_completer" }
+dependencies = [
+    { name = "chz" },
+    { name = "openai" },
+    { name = "structlog" },
+    { name = "tenacity" },
+    { name = "tiktoken" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "chz" },
+    { name = "openai", specifier = "==1.99.9" },
+    { name = "structlog" },
+    { name = "tenacity" },
+    { name = "tiktoken" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "mypy", specifier = ">=1.15.0" },
+    { name = "poethepoet", specifier = ">=0.34.0" },
+    { name = "pre-commit", specifier = ">=4.2.0" },
+    { name = "pytest", specifier = ">=8.4.1" },
+    { name = "pytest-xdist", extras = ["psutil"], specifier = ">=3.8.0" },
+    { name = "ruff", specifier = ">=0.11.10" },
 ]
 
 [[package]]
